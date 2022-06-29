@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="" sizes="35x35" type="image/jpg">
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet"href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <style>
+        #nav_bar{
+            background-size: cover;
+            width: 100%;
+            min-height: 75px;
+            position: relative;
+            color: white;
+            align-items: center;
+            align-content: center;
+        }
+        .nav-link {
+            text-decoration-line: none;
+            color: white;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            margin-bottom: .5rem;
+            font-size: 1.70rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+        }
+        .nav-link:hover {
+            color: white;
+        }
+        #endOfPage {
+            position: relative;
+            height: 325px;
+            background-color: #A0BAC6;
+            align-items: center;
+            color: #24364C;
+        }
+        #shopInfo {
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        #terms {
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        a {
+            text-decoration-line: none;
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #24364C;
+        }
+        a:hover {
+            color: #24364C;
+        }
+        img {
+            width: 40px;
+            height: 40px;
+        }
+        #follow {
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        #body {
+            background-color: white;
+            height: 1185px;
+        }
+        #pic {
+            width: 331px;
+            height: 374px;
+            margin-left: 0rem;
+            margin-top: 3rem;
+        }
+        .row {
+            width: 100%;
+        }
+        #namePrice {
+            margin-left: 1rem;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            color: #24364C;
+            font-weight: bolder;
+        }
+        #filterHeader {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            color: #24364C;
+            font-weight: bolder;
+        }
+        label {
+            font-family: 'Inter', sans-serif;
+            font-size: .75rem;
+            color: #24364C;
+            font-weight: bolder;
+            margin-left: .5rem;
+        }
+        #separate {
+            margin-left: 1rem;
+            color: #24364C;
+            opacity: 50%;
+            font-weight: bolder;
+        }
+        #applyFilter {
+            width: 5rem;
+            background-color: #265180;
+            color: white;
+            font-weight: bolder;
+            font-family: 'Inter', sans-serif;
+            margin-left: 5rem;
+        }
+        #applyFilter:focus {
+            background-color: #265180;
+            box-shadow: none;
+        }
+        .page-link {
+            font-family: 'Inter', sans-serif;
+            color: #265180;
+        }
+    </style>
+</head>
+<body>
+<div
+        class="container-fluid d-flex align-items-center"
+        style="background-image: url('./images/nav_bar.PNG')"
+        id="nav_bar"
+>
+    <nav class="navbar navbar-expand-sm">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid justify-content-center" id="2">
+                <ul class="navbar-nav">
+                    <a class="navbar-brand" href="cart.html" id="cartIcon" style="padding-right: 23rem;">
+                        <img src="./images/Shopping_cart.png" alt="cart" style="width:40px;">
+                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="backpack.html">Backpack</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shoes.html">Shoes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">LOGO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clothes.html">Clothes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="accessories.html">Accessories</a>
+                    </li>
+                    <a class="navbar-brand" href="login.html" id="cartIcon" style="padding-left: 23rem;">
+                        <img src="./images/login_signin.png" alt="account" style="width:40px;">
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </nav>
+</div>
+<div class="container-fluid d-flex" id="body">
+    <div class="col-3" id="filter">
+        <div class="container-fluid d-flex flex-column justify-content-center" style="margin-top: 7rem;">
+            <p id="filterHeader">Fitlers</p>
+            <table id="tblType">
+                <tr>
+                    <td><input id="Backpack" type="checkbox" value="1"/><label for="Backpack">Backpack</label></td>
+                </tr>
+                <tr>
+                    <td><input id="Shoes" type="checkbox" value="2"/><label for="Shoes">Shoes</label></td>
+                </tr>
+                <tr>
+                    <td><input id="Clothes" type="checkbox" value="3"/><label for="Clothes">Clothes</label></td>
+                </tr>
+                <tr>
+                    <td><input id="Accessories" type="checkbox" value="4"/><label for="Accessories">Accessories</label></td>
+                </tr>
+            </table>
+            <p id="separate">_______________</p>
+            <table id="tblGender">
+                <tr>
+                    <td><input id="Male" type="checkbox" value="1"/><label for="Male">Male</label></td>
+                </tr>
+                <tr>
+                    <td><input id="Female" type="checkbox" value="2"/><label for="Female">Female</label></td>
+                </tr>
+                <tr>
+                    <td><input id="Kids" type="checkbox" value="3"/><label for="Kids">Kids</label></td>
+                </tr>
+            </table>
+            <p id="separate">_______________</p>
+            <table id="tblBrand">
+                <tr>
+                    <td><input id="Nike" type="checkbox" value="1"/><label for="Nike">Nike</label></td>
+                </tr>
+                <tr>
+                    <td><input id="Adidas" type="checkbox" value="2"/><label for="Adidas">Adidas</label></td>
+                </tr>
+                <tr>
+                    <td><input id="Under Armour" type="checkbox" value="3"/><label for="Under Armour">Under Armour</label></td>
+                </tr>
+                <tr>
+                    <td><input id="Puma" type="checkbox" value="4"/><label for="Puma">Puma</label></td>
+                </tr>
+                <tr>
+                    <td><input id="New Balance" type="checkbox" value="5"/><label for="New Balance">New Balance</label></td>
+                </tr>
+            </table>
+            <p id="separate">_______________</p>
+            <table id="tblSize">
+                <tr>
+                    <th>
+                    <td><input id="6" type="checkbox" value="1"/><label for="6">6</label></td>
+                    </th>
+                    <th>
+                    <td><input id="10.5" type="checkbox" value="10"/><label for="10.5">10.5</label></td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                    <td><input id="6.5" type="checkbox" value="2"/><label for="6.5">6.5</label></td>
+                    </th>
+                    <th>
+                    <td><input id="11" type="checkbox" value="11"/><label for="11">11</label></td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                    <td><input id="7" type="checkbox" value="3"/><label for="7">7</label></td>
+                    </th>
+                    <th>
+                    <td><input id="11.5" type="checkbox" value="12"/><label for="11.5">11.5</label></td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                    <td><input id="7.5" type="checkbox" value="4"/><label for="7.5">7.5</label></td>
+                    </th>
+                    <th>
+                    <td><input id="12" type="checkbox" value="13"/><label for="12">12</label></td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                    <td><input id="8" type="checkbox" value="5"/><label for="8">8</label></td>
+                    </th>
+                    <th>
+                    <td><input id="13" type="checkbox" value="14"/><label for="13">13</label></td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                    <td><input id="8.5" type="checkbox" value="6"/><label for="8.5">8.5</label></td>
+                    </th>
+                    <th>
+                    <td><input id="14" type="checkbox" value="15"/><label for="14">14</label></td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                    <td><input id="9" type="checkbox" value="7"/><label for="9">9</label></td>
+                    </th>
+                    <th>
+                    <td><input id="15" type="checkbox" value="16"/><label for="15">15</label></td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                    <td><input id="9.5" type="checkbox" value="8"/><label for="9.5">9.5</label></td>
+                    </th>
+                    <th>
+                    <td><input id="16" type="checkbox" value="17"/><label for="16">16</label></td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                    <td><input id="10" type="checkbox" value="9"/><label for="10">10</label></td>
+                    </th>
+                </tr>
+            </table>
+            <p id="separate">_______________</p>
+            <table id="tblColor">
+                <tr>
+                    <td><input id="Red" type="checkbox" value="1"/><label for="Red">
+                        <div style="width: 1rem; height: 1rem; background-color: red;"></div>
+                    </label></td>
+                </tr>
+                <tr>
+                    <td><input id="Blue" type="checkbox" value="2"/><label for="Blue">
+                        <div style="width: 1rem; height: 1rem; background-color: blue;"></div>
+                    </label></td>
+                </tr>
+                <tr>
+                    <td><input id="White" type="checkbox" value="3"/><label for="White">
+                        <div style="width: 1rem; height: 1rem; background-color: #f8f8f8;"></div>
+                    </label></td>
+                </tr>
+                <tr>
+                    <td><input id="Black" type="checkbox" value="3"/><label for="Black">
+                        <div style="width: 1rem; height: 1rem; background-color: black;"></div>
+                    </label></td>
+                </tr>
+                <tr>
+                    <td><input id="Pink" type="checkbox" value="3"/><label for="Pink">
+                        <div style="width: 1rem; height: 1rem; background-color: #ffc0cb;"></div>
+                    </label></td>
+                </tr>
+            </table>
+            <a href="#" class="btn" id="applyFilter">Apply</a>
+        </div>
+    </div>
+    <div class="col-9 d-flex flex-column" style="margin-top: 4rem;">
+        <div class="row d-flex justify-content-center">
+            <div class="col-4">
+                <a href="product.html">
+                    <img src="./images/shoes11.JPG" id="pic">
+                </a>
+                <p id="namePrice">Name
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;
+                    $$$</p>
+            </div>
+            <div class="col-4">
+                <a href="product.html">
+                    <img src="./images/shoes11.JPG" id="pic">
+                </a>
+                <p id="namePrice">Name
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;
+                    $$$</p>
+            </div>
+            <div class="col-4">
+                <a href="product.html">
+                    <img src="./images/shoes11.JPG" id="pic">
+                </a>
+                <p id="namePrice">Name
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;
+                    $$$</p>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-4">
+                <a href="product.html">
+                    <img src="./images/shoes11.JPG" id="pic">
+                </a>
+                <p id="namePrice">Name
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;
+                    $$$</p>
+            </div>
+            <div class="col-4">
+                <a href="product.html">
+                    <img src="./images/shoes11.JPG" id="pic">
+                </a>
+                <p id="namePrice">Name
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;
+                    $$$</p>
+            </div>
+            <div class="col-4">
+                <a href="product.html">
+                    <img src="./images/shoes11.JPG" id="pic">
+                </a>
+                <p id="namePrice">Name
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;
+                    $$$</p>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center" style="margin-top: 1rem;">
+            <ul class="pagination pagination-sm justify-content-center">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container-fluid d-flex" id="endOfPage">
+    <div class="col-5" id="shopInfo">
+        Address: 123 ABC Way, Ottawa, ON, <br>
+        Canada, K3O 3L8 <br>
+        Phone: 555-555-5555 <br>
+        Open - Close: 8:00 - 21:00
+    </div>
+    <div class="col-4 d-flex flex-column" id="terms">
+        <a href="#">Give us your feed back</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Terms of Sales</a>
+    </div>
+    <div class="col-3" id="follow">
+        Follow us:
+        <a href="#">
+            <img src="./images/instagram.png" class="img">
+        </a>
+        <a href="#">
+            <img src="./images/twitter.png" class="img">
+        </a>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    window.onload = function () {
+        var tblFruits = document.getElementById("tblType");
+        var chks = tblFruits.getElementsByTagName("INPUT");
+        for (var i = 0; i < chks.length; i++) {
+            chks[i].onclick = function () {
+                for (var i = 0; i < chks.length; i++) {
+                    if (chks[i] != this && this.checked) {
+                        chks[i].checked = false;
+                    }
+                }
+            };
+        }
+    };
+    window.onload = function () {
+        var tblFruits = document.getElementById("tblGender");
+        var chks = tblFruits.getElementsByTagName("INPUT");
+        for (var i = 0; i < chks.length; i++) {
+            chks[i].onclick = function () {
+                for (var i = 0; i < chks.length; i++) {
+                    if (chks[i] != this && this.checked) {
+                        chks[i].checked = false;
+                    }
+                }
+            };
+        }
+    };
+    window.onload = function () {
+        var tblFruits = document.getElementById("tblBrand");
+        var chks = tblFruits.getElementsByTagName("INPUT");
+        for (var i = 0; i < chks.length; i++) {
+            chks[i].onclick = function () {
+                for (var i = 0; i < chks.length; i++) {
+                    if (chks[i] != this && this.checked) {
+                        chks[i].checked = false;
+                    }
+                }
+            };
+        }
+    };
+    window.onload = function () {
+        var tblFruits = document.getElementById("tblSize");
+        var chks = tblFruits.getElementsByTagName("INPUT");
+        for (var i = 0; i < chks.length; i++) {
+            chks[i].onclick = function () {
+                for (var i = 0; i < chks.length; i++) {
+                    if (chks[i] != this && this.checked) {
+                        chks[i].checked = false;
+                    }
+                }
+            };
+        }
+    };
+</script>
